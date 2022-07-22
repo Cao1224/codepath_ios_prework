@@ -11,6 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Prework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
@@ -67,10 +68,7 @@
                                 <rect key="frame" x="251" y="102" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="onTapWith_sender:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="eZC-SJ-i1q"/>
-                                </connections>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Per Person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxh-A1-Hlr">
                                 <rect key="frame" x="43" y="338" width="83" height="21"/>
@@ -89,6 +87,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="8Au-jZ-pL8">
@@ -101,7 +100,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="billAmountText" destination="8iA-5w-OqJ" id="1dI-wS-dsQ"/>
-                        <outlet property="billAmountTextField" destination="59p-bA-9KX" id="y0x-s3-jk2"/>
+                        <outlet property="billAmountTextField" destination="59p-bA-9KX" id="Dfd-hS-2zB"/>
                         <outlet property="perPersonAmount" destination="oez-NO-WYl" id="Mkr-z4-Luq"/>
                         <outlet property="perPersonText" destination="sxh-A1-Hlr" id="gHw-68-pV2"/>
                         <outlet property="tipAmountLabel" destination="2IJ-Q7-P0p" id="i2F-fA-jpV"/>
@@ -111,7 +110,6 @@
                         <outlet property="totalText" destination="kpr-qm-L5l" id="ZXG-ha-VuN"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="950.76923076923072" y="3.5545023696682461"/>
         </scene>
@@ -297,6 +295,7 @@
                         <viewLayoutGuide key="safeArea" id="8mF-0M-QCO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="0.84999999999999998" height="1"/>
+                        <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" id="oDE-3F-nB7"/>
                     <connections>

@@ -11,6 +11,7 @@ final class PreworkUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUpWithError()
 
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
@@ -20,6 +21,7 @@ final class PreworkUITests: XCTestCase {
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDownWithError()
     }
 
     func testExample() throws {

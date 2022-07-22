@@ -38,6 +38,7 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        peopleCountTextField.backgroundColor = UIColor.lightGray;
         if (UserDefaults.standard.bool(forKey: "switchKeyName")) {
             Settings.sharedInstance.backgroundColor = UIColor.black;
             Settings.sharedInstance.textColor = UIColor.white;
@@ -68,6 +69,7 @@ class SettingsViewController: UIViewController {
             switchButton.isOn = false
         }
     }
+    
     
     override func viewDidAppear(_ animated: Bool) {
         self.view.backgroundColor = Settings.sharedInstance.backgroundColor;
@@ -115,7 +117,6 @@ class SettingsViewController: UIViewController {
         peopleCountTextField.textColor = Settings.sharedInstance.textColor;
         peopleStepper.tintColor = Settings.sharedInstance.textColor;
     }
-    
     
     @IBAction func rate1SwitchChanged(_ sender: Any) {
         if(rate1Switch.isOn) {

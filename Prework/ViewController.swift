@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        billAmountTextField.backgroundColor = UIColor.lightGray;
         // Do any additional setup after loading the view.
         if (UserDefaults.standard.bool(forKey: "switchKeyName")) {
             Settings.sharedInstance.backgroundColor = UIColor.black;
@@ -59,9 +60,6 @@ class ViewController: UIViewController {
         calculateTip(animated as AnyObject)
     }
     
-    @IBAction func onTap(_sender: Any) {
-        view.endEditing(true)
-    }
     
     @IBAction func calculateTip(_ sender: AnyObject) {
         let defaults = UserDefaults.standard
@@ -90,7 +88,7 @@ class ViewController: UIViewController {
 
     func switchColor() {
         self.view.backgroundColor = Settings.sharedInstance.backgroundColor;
-        billAmountTextField.textColor = Settings.sharedInstance.textColor;
+        //billAmountTextField.textColor = Settings.sharedInstance.textColor;
         tipAmountLabel.textColor = Settings.sharedInstance.textColor;
         tipControl.tintColor = Settings.sharedInstance.textColor;
         totalLabel.textColor = Settings.sharedInstance.textColor;
